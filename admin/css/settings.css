@@ -1,0 +1,78 @@
+.settingsTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.settingsTitle b{
+    font-size: 20px;
+}
+
+.settingsTitle a{
+    color: var(--grey);
+}
+
+.settingsTitle a:hover{
+    color: var(--black);
+}
+
+
+
+.user{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user img{
+    width: 100px;
+    height: 100px;
+    filter: invert(70%);
+}
+
+.user #userInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.user #userInfo #block, .files #block{
+    display: flex;
+    align-items: center;
+}
+
+.user #userInfo #block:not(:first-child){
+    margin-top: 10px;
+}
+
+.user #userInfo #block p, .user #userInfo #block .text, .files #block p, .files #block .text{
+    min-width: 150px;
+    height: 30px;
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.user #userInfo #block .text, .files #block .text{
+    width: 150px;
+}
+
+.user #userInfo #block #type, .files #block #type{
+    background: var(--lowLight);
+}
+
+.user #userInfo #block a, .user #userInfo #block .button, .files #block a, .files #block .button{
+    color: var(--grey);
+}
+
+.user #userInfo #block a:hover, .user #userInfo #block .button:hover, .files #block a:hover, .files #block .button:hover{
+    color: var(--black);
+    cursor: pointer;
+}
+
+.user #userInfo #block .text:hover, .user #userInfo #block .text:focus, .files #block .text:hover, .files #block .text:focus{
+    background: var(--lowLight);
+}

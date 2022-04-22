@@ -1,0 +1,652 @@
+.start{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.start #startBlock{
+    width: 300px;
+}
+
+.start #startBlock #title{
+    width: 100%;
+    background: var(--blue);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    font-size: 20px;
+}
+
+.start #startBlock #form{
+    width: 100%;
+    padding: 20px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.start #startBlock #form .text{
+    width: 100%;
+    height: 30px;
+    background: var(--light);
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.start #startBlock #form .text:not(:first-of-type){
+    margin-top: 10px;
+}
+
+.start #startBlock #form .text:hover, .start #startBlock #form .text:focus{
+    background: var(--lowLight);
+}
+
+.start #startBlock #form .button{
+    background: var(--blue);
+    color: var(--white);
+    padding: 7px 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.start #startBlock #form .button:hover{
+    background: var(--blueHover);
+    cursor: pointer;
+}
+
+.start #startBlock #form #error{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.start #startBlock #form #error p{
+    color: var(--red);
+    font-size: 13px;
+}
+
+
+
+.block{
+    display: flex;
+    flex-direction: column;
+}
+
+.block:not(:first-of-type){
+    margin-top: 30px;
+}
+
+.block .button{
+    background: var(--blue);
+    color: var(--white);
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.block .button:hover{
+    background: var(--blueHover);
+    cursor: pointer;
+}
+
+.block #stringTitle{
+    margin-bottom: 10px;
+}
+
+.block #stringTitle:not(:first-of-type){
+    margin: 10px 0;
+}
+
+.block #title{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.block #title b{
+    font-size: 20px;
+}
+
+.block #title a{
+    color: var(--grey);
+}
+
+.block #title a:hover{
+    color: var(--black);
+}
+
+.block #content{
+    display: flex;
+}
+
+.block #content #string, .block #content #values{
+    display: flex;
+    flex-direction: column;
+}
+
+.block #content #values{
+    margin-left: 10px;
+}
+
+.block #content #string p, .block #content #values p, .block .text{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.block #content #string #text:not(:first-of-type), .block #content #values #text:not(:first-of-type), .block #content #values #block:not(:first-of-type), .block #content #values #textBlock, .block #content #values #textInput{
+    margin-top: 10px;
+}
+
+.block #content #string #text{
+    background: var(--lowLight);
+}
+
+.block #content #values #text, .block #content #values #textBlock{
+    background: var(--light);
+}
+
+.block #content #values #block{
+    display: flex;
+}
+
+.block #content #values #blockText, .block #content #values #inputText{
+    width: 100px;
+    background: var(--light);
+}
+
+.block #content .text{
+    background: var(--light);
+}
+
+.block #content .text:hover, .block #content .text:focus, .block #content #values #inputText:hover, .block #content #values #inputText:focus{
+    background: var(--lowLight);
+}
+
+
+
+.stats{
+    display: flex;
+    justify-content: center;
+}
+
+.stats #block{
+    background: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.stats #block:not(:first-of-type){
+    margin-left: 10px;
+}
+
+.stats #block p{
+    color: var(--dark);
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#statsTitle{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+
+.versions{
+    margin-top: 50px;
+}
+
+.versions #block{
+    display: flex;
+    flex-direction: column;
+}
+
+.versions #block:not(:first-of-type){
+    margin-top: 10px;
+}
+
+.versions #block b{
+    margin-bottom: 5px;
+}
+
+.versions #block p{
+    margin-left: 10px;
+}
+
+
+
+.quests{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.quests #questsTitle{
+    font-size: 20px;
+}
+
+.quests #block{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.quests #block:not(:first-of-type){
+    margin-top: 10px;
+}
+
+.quests #block p, .quests #block .text{
+    width: 100px;
+    height: 30px;
+    background: var(--light);
+    display: flex;
+    flex-basis: 100px;
+    flex-grow: 2;
+    align-items: center;
+    appearance: none;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.quests #block select.text:hover{
+    cursor: pointer;
+}
+
+.quests #block p#amount, .quests #block .text#amount{
+    flex-grow: 1;
+}
+
+.quests #block p:not(:first-of-type), .quests #block .text:not(:first-child){
+    margin-left: 10px;
+}
+
+.quests #block a, .quests #block .button{
+    color: var(--grey);
+    margin-left: 10px;
+}
+
+.quests #block a:hover, .quests #block .button:hover{
+    color: var(--black);
+    cursor: pointer;
+}
+
+.quests #block .text:hover, .quests #block .text:focus{
+    background: var(--lowLight);
+}
+
+
+
+.addQuest #questsTitle{
+    font-size: 20px;
+}
+
+.addQuest #block{
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.addQuest #block .text{
+    width: 100px;
+    height: 30px;
+    background: var(--light);
+    display: flex;
+    flex-basis: 100px;
+    flex-grow: 2;
+    align-items: center;
+    appearance: none;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.addQuest #block .text#amount{
+    flex-grow: 1;
+}
+
+.addQuest #block .text:not(:first-child){
+    margin-left: 10px;
+}
+
+.addQuest #block .text:hover, .addQuest #block .text:focus{
+    background: var(--lowLight);
+}
+
+.addQuest #block select.text:hover{
+    cursor: pointer;
+}
+
+.addQuest #block .button{
+    height: 30px;
+    background: var(--blue);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.addQuest #block .button:hover{
+    background: var(--blueHover);
+    cursor: pointer;
+}
+
+
+
+.roles{
+    display: flex;
+    flex-direction: column;
+}
+
+.roles #block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.roles #block:not(:first-of-type){
+    margin-top: 30px;
+}
+
+.roles #block #title, .addRoles #title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.roles #block #title b{
+    font-size: 20px;
+}
+
+.roles #block #title #buttons a, .roles #block #title #buttons .button, .addRoles #title .button{
+    color: var(--grey);
+}
+
+.roles #block #title #buttons a:hover, .roles #block #title #buttons .button:hover, .addRoles #title .button:hover{
+    color: var(--black);
+    cursor: pointer;
+}
+
+.roles #block #title #buttons a:not(:first-child){
+    margin-left: 10px;
+}
+
+.roles #block #user{
+    display: flex;
+    align-items: center;
+}
+
+.roles #block #user:not(:first-of-type){
+    margin-top: 10px;
+}
+
+.roles #block #user #userName{
+    min-width: 150px;
+    height: 30px;
+    background: var(--lowLight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.roles #block #user a, .roles #block #addUser .button{
+    color: var(--grey);
+    margin-left: 10px;
+}
+
+.roles #block #user a:hover, .roles #block #addUser .button:hover{
+    color: var(--black);
+    cursor: pointer;
+}
+
+.roles #block #edit, .addRoles #edit{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.roles #block #edit p, .roles #block #edit .text, .addRoles #edit p, .roles #block #addUser .text, .addRoles #edit .text{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.roles #block #edit p, .addRoles #edit p{
+    width: 200px;
+    background: var(--lowLight);
+}
+
+.roles #block #edit .text, .roles #block #addUser .text, .addRoles #edit .text{
+    width: 150px;
+    background: var(--light);
+}
+
+.roles #block #edit .text:hover, .roles #block #edit .text:focus, .roles #block #addUser .text:hover, .roles #block #addUser .text:focus, .addRoles #edit .text:hover, .addRoles #edit .text:focus{
+    background: var(--lowLight);
+}
+
+.roles #block #addUser{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.addRoles{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.addRoles b{
+    font-size: 20px;
+}
+
+
+
+.addMapPack{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addMapPack #title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addMapPack #title b{
+    font-size: 20px;
+}
+
+.addMapPack #title .button, .mapPacks #block a, .mapPacks #block .button{
+    color: var(--grey);
+}
+
+.addMapPack #title .button:hover, .mapPacks #block a:hover, .mapPacks #block .button:hover{
+    color: var(--black);
+    cursor: pointer;
+}
+
+.addMapPack #block, .mapPacks #block{
+    display: flex;
+    align-items: center;
+}
+
+.addMapPack #block .text, .mapPacks #block p, .mapPacks #block .text{
+    width: 50px;
+    height: 30px;
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    flex-basis: 50px;
+    flex-grow: 1;
+}
+
+.addMapPack #block .text:not(:first-of-type), .mapPacks #block p:not(:first-of-type), .mapPacks #block .text:not(:first-of-type){
+    margin-left: 10px;
+}
+
+.addMapPack #block .text:hover, .addMapPack #block .text:focus, .mapPack #block .text:hover, .mapPack #block .text:focus{
+    background: var(--lowLight);
+}
+
+
+
+.mapPacks{
+    margin-top: 30px;
+}
+
+.mapPacks b{
+    font-size: 20px;
+}
+
+.mapPacks #block:not(:first-of-type){
+    margin-top: 10px;
+}
+
+.mapPacks #block p:first-of-type{
+    background: var(--lowLight);
+    justify-content: center;
+    text-align: center;
+}
+
+.mapPacks #block a, .mapPacks #block .button{
+    margin-left: 10px;
+}
+
+
+
+.addGauntlet{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addGauntlet #title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.addGauntlet #title b{
+    font-size: 20px;
+}
+
+.addGauntlet #title .button{
+    color: var(--grey);
+}
+
+.addGauntlet #title .button:hover{
+    color: var(--black);
+    cursor: pointer;
+}
+
+.addGauntlet #block{
+    display: flex;
+}
+
+.addGauntlet #block .text, .gauntlets #block .text{
+    width: 50px;
+    height: 30px;
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    appearance: none;
+    padding: 0 10px;
+    border-radius: 5px;
+    flex-basis: 50px;
+    flex-grow: 1;
+}
+
+.addGauntlet #block .text:not(:first-child), .gauntlets #block .text:not(:first-child){
+    margin-left: 10px;
+}
+
+.addGauntlet #block select.text, .gauntlets #block select.text{
+    cursor: pointer;
+}
+
+.addGauntlet #block .text:hover, .addGauntlet #block .text:focus, .gauntlets #block .text:hover, .gauntlets #block .text:focus{
+    background: var(--lowLight);
+}
+
+
+
+.gauntlets{
+    margin-top: 30px;
+}
+
+.gauntlets b{
+    font-size: 20px;
+}
+
+.gauntlets #block{
+    display: flex;
+    align-items: center;
+}
+
+.gauntlets #block:not(:first-of-type){
+    margin-top: 10px;
+}
+
+.gauntlets #block p{
+    width: 50px;
+    height: 30px;
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 5px;
+    flex-basis: 50px;
+    flex-grow: 1;
+}
+
+.gauntlets #block p:not(:first-child){
+    margin-left: 10px;
+}
+
+.gauntlets #block p:first-child{
+    background: var(--lowLight);
+    justify-content: center;
+    text-align: center;
+}
+
+.gauntlets #block a, .gauntlets #block .button{
+    color: var(--grey);
+    margin-left: 10px;
+}
+
+.gauntlets #block a:hover, .gauntlets #block .button:hover{
+    color: var(--black);
+    cursor: pointer;
+}
