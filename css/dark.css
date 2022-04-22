@@ -1,0 +1,12 @@
+:root{
+    --white: #373737;
+    --lightGrey: #2a2a2a;
+    --grey: #454545;
+    --darkGrey: #cccccc;
+    --black: #f4f4f4;
+    --header: #555555;
+    --button: invert(90%);
+    --buttonHover: invert(90%);
+    --img: invert(10%);
+    --imgHover: invert(0%);
+}

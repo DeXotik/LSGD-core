@@ -1,0 +1,312 @@
+header{
+    width: 100%;
+    height: 50px;
+    background: var(--header);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+header a{
+    color: var(--white);
+    font-size: 30px;
+}
+
+header #theme{
+    width: 40px;
+    height: 20px;
+    background: var(--white);
+    display: flex;
+    cursor: pointer;
+    padding: 2.5px;
+    border-radius: 10px;
+}
+
+header #theme div{
+    width: 15px;
+    height: 15px;
+    background: var(--black);
+    border-radius: 100%;
+}
+
+
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main #title{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.main div{
+    display: flex;
+    align-items: center;
+}
+
+.main div #desc{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main div #desc b{
+    font-size: 17px;
+}
+
+.main div #desc p{
+    font-size: 16px;
+}
+
+.main div #download{
+    background: var(--lightGrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+.main div #download b{
+    font-size: 20px;
+}
+
+.main div #download .button{
+    background: var(--darkGrey);
+    color: var(--lightGrey);
+    margin-top: 20px;
+}
+
+.main div #download .button:hover{
+    background: var(--grey);
+    color: var(--darkGrey);
+    cursor: pointer;
+}
+
+
+
+.download{
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+}
+
+.hide{
+    display: none;
+}
+
+.download #block{
+    width: 300px;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.download #block #title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.download #block #title #close{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.download #block #buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download #block #buttons a:not(:first-of-type){
+    margin-left: 10px;
+}
+
+.download #block #buttons a div{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+}
+
+
+.download #block #buttons a #windows:hover, .download #block #buttons a #android:hover{
+    background: var(--black);
+    filter: var(--buttonHover);
+}
+
+.download #block #buttons a #windows{
+    background: #1e6dff;
+    padding: 7px;
+}
+
+.download #block #buttons a #android{
+    background: #1ad442;
+    padding: 5px;
+}
+
+.download #block #buttons a div img{
+    filter: var(--button);
+}
+
+.download #block #buttons a #windows img{
+    width: 25px;
+    height: 25px;
+}
+
+.download #block #buttons a #android img{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.stats{
+    display: flex;
+}
+
+.stats #block{
+    background: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.stats #block:not(:first-of-type){
+    margin-left: 10px;
+}
+
+.stats #block p{
+    color: var(--darkGrey);
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+
+.features{
+    display: flex;
+    align-items: center;
+}
+
+.features div{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.features div b{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.features div p{
+    color: var(--darkGrey);
+}
+
+.features div p:not(:first-of-type){
+    margin-top: 2px;
+}
+
+.features div a{
+    color: var(--darkGrey);
+    margin-top: 10px;
+}
+
+.features div a:hover{
+    color: var(--black);
+}
+
+.features img{
+    width: 100px;
+    height: 100px;
+    filter: var(--img);
+}
+
+.features #user{
+    margin-left: 20px;
+}
+
+.features #api{
+    margin-right: 20px;
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p, footer a{
+    color: var(--darkGrey);
+}
+
+footer #info{
+    display: flex;
+    align-items: center;
+}
+
+footer #info div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer #info #infoBlock:first-of-type{
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+footer #info #infoBlock p:not(:first-of-type){
+    margin-top: 2px;
+}
+
+footer #info #links{
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+footer #info #links a:not(:first-of-type){
+    margin-left: 10px;
+}
+
+footer #info #links a img{
+    width: 30px;
+    height: 30px;
+    filter: var(--img);
+}
+
+footer #info #links a img:hover{
+    filter: var(--imgHover);
+}
+
+footer #author{
+    margin-top: 10px;
+}
+
+footer #author a:hover{
+    color: var(--black);
+}
